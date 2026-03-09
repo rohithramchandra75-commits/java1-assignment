@@ -14,7 +14,6 @@ public class SearchRotatedArray {
             if (arr[mid] == key)
                 return mid;
 
-            // Left half is sorted
             if (arr[low] <= arr[mid]) {
 
                 if (key >= arr[low] && key < arr[mid]) {
@@ -24,7 +23,6 @@ public class SearchRotatedArray {
                 }
 
             }
-            // Right half is sorted
             else {
 
                 if (key > arr[mid] && key <= arr[high]) {
@@ -52,3 +50,4 @@ public class SearchRotatedArray {
             System.out.println("Element not found");
     }
 }
+
